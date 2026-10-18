@@ -2,64 +2,51 @@
 
 Make humans smart again.
 
-A set of plain-text files and rules that turn an AI assistant from a tool that finishes your work into one that keeps a record of what you can do without it, and works to raise that number.
+Your assistant keeps getting better at your work. This makes it keep a file on how good *you* are at it, with your own words as the evidence, and work to raise the number while it does the job at full speed.
 
-There is no software here. It is markdown, a few hook scripts, and rules. It has two layers:
-
-1. **The brain.** A full context system for Claude Code, the one I run, given away with my data taken out: the folder structure, the boot sequence, the ledgers, the SOPs, the capture hooks, the memory convention, the session discipline. Set this up first. Nothing in layer two works on a chat with no memory. [brain/](brain/)
-2. **The operator.** One new ledger on top of the brain, and six behaviors, that keep a record of what you can do without the machine and work to raise it. This is the part that did not exist anywhere.
-
-If you are not on Claude Code, [PROMPT.md](PROMPT.md) is the operator layer alone as one paste for any chat tool. It works. It is the smaller version.
-
-## The problem it answers
-
-If you use an assistant every day, it gets better at your work and you get worse at it. Not because it is hiding anything. Because the default is to finish the task, and nobody asked it to teach, and after the hundredth "build this" nobody notices that the human could no longer build it.
-
-I run a large context system for my own work: every word I say is saved verbatim, every fact change is logged, the machine writes down its own reasoning and the gap when I correct it, and memory is one fact per file. It compounds. The assistant knows me better every week. Then I asked it to grade its own output and it gave itself a seven, named three things it could have done better, and I thought, why did you not do that in the first place. The answer is that I never asked, and I did not know enough to ask, and nothing in the system recorded that I did not know.
-
-Four ledgers recorded what was said and what was built. None recorded what I could do. That is the fifth ledger, and it is the only new thing in this repo. A year of making the agent more efficient, and the whole time the point was to make it more efficient for me.
+Plain text and rules. No software. Paste one file into any chat tool, or set up the whole brain on Claude Code.
 
 ## What it does
 
-1. **It scores you.** On first run, and then weekly, the assistant reads everything it has on you and writes `OPERATOR.md`: a level from 0 to 100 for each domain you actually use it for, with the line of yours that is the evidence. No score without a quote. The anchors are in [THE-LADDER.md](THE-LADDER.md).
-2. **It walks you through the reasoning.** The work ships at full speed and full size; nothing about the output gets smaller or slower. The reply gets longer. When it builds something, the reply carries the reasoning in prose: what it chose, over what, why, the concept named so you could search it, and what it would call out in its own work. For a one-line task that is one sentence. For "build the website" it is a page. If you skip it, the file knows.
-3. **It calls itself out.** When its own output is below its own bar and you accepted it without comment, it says so unprompted: what it gave you, what better looks like, and the word for the difference.
-4. **It reads before it works.** At the start of a session in a domain, it spends a few minutes on what is new in that field, reports it as an announcement with sources, and says what it is changing in its own method because of it. It never updates itself silently.
-5. **It hands work back.** When a task has a repeatable piece in a domain where you are under target, it does the first one and hands you the next with what it has to tie to. Three clean in a row and it stops interrupting you on that concept. Doing beats reading.
-6. **It keeps the count of what you skipped.** When you say "just do it", it does it and writes one line in `OPERATOR.md`. No nagging. The file keeps score.
+1. **Scores you.** Reads everything it has on you and writes `OPERATOR.md`: a level from 0 to 100 for each thing you use it for, with a quoted line of yours under every number. No score without a quote. [The ladder](THE-LADDER.md).
+2. **Walks you through the reasoning.** The work ships whole and at full speed. The reply gets longer: what it chose, over what, why, the concept you would have needed to ask for it yourself, named so you can search it.
+3. **Calls itself out.** When its output is under its own bar and you accepted it, it says so without being asked, and gives the word for the difference.
+4. **Reads before it works.** A few minutes on what is new in the field, reported as an announcement with sources. It never changes its method silently.
+5. **Hands work back.** It does the first repeatable piece and hands you the second with what it has to tie to. Three clean in a row and it stops interrupting you on that concept.
+6. **Counts what you skipped.** "Just do it" means it does it, and one line lands in the file. No nagging. The file keeps score, weekly.
 
-Everything else in the folder is the structure that makes those six possible: a corpus of your own words, a log of fact changes, a log of the machine's decisions and the gaps when you corrected it, and a memory index. If you already run something like this, the assistant audits what you have. If you do not, it sets up the minimum.
-
-## Does the assistant not do this already?
-
-Partly. Every assistant explains when asked. The big chat products ship a study or learning mode. Those are modes: you switch them on for one chat, nothing remembers across chats that you were learning, and nothing grades its own output against your level. The gap is a record and a default. That is all this is.
+[EXAMPLE.md](EXAMPLE.md) shows all six on one build, a landing page, start to finish.
 
 ## Install
 
-**Claude Code, the full thing.** Install Claude Code, then from a new terminal:
+**Any chat tool, 60 seconds.** Open [PROMPT.md](PROMPT.md), paste it into a new chat in ChatGPT, Gemini or Claude, and answer its questions. Self-contained. If your tool has memory or projects it keeps the files; if not, it asks you to keep five small files and paste them back.
+
+**Claude Code, the whole brain.** This is the version I run, and the one I would push you toward, because a record of your level needs a record of you, and a chat with no memory has neither. [brain/](brain/) is my full context system given away with my data taken out: the folder structure, the boot sequence, the ledgers, nine SOPs, the capture hooks, the memory convention.
 
 ```
 git clone https://github.com/EddyRLora/optimize-the-human
 cd optimize-the-human
-bash brain/make_vault.sh ~/brain        # the folder structure, the ledgers, the index files
-cp brain/CLAUDE.md ~/brain/CLAUDE.md    # the starter; edit the top section to be about you
+bash brain/make_vault.sh ~/brain
+cp brain/CLAUDE.md ~/brain/CLAUDE.md
 cp -r claude-code/skills ~/brain/.claude/
 cd ~/brain && claude
 ```
 
-Then `/setup` (checks the vault, wires the hooks, asks you the five questions the starter CLAUDE.md needs), then `/audit` (reads what you have and writes `OPERATOR.md`). Read [brain/README.md](brain/README.md) first; it says why each piece exists.
+Then `/setup`, then `/audit`. Read [brain/README.md](brain/README.md) once; it says why every piece exists.
 
-**Any chat tool (ChatGPT, Gemini, Claude), the small version.** Open [PROMPT.md](PROMPT.md), paste the whole thing into a new chat, and answer its questions. It is self-contained. If your tool has memory or projects, tell it to use them; if not, it will ask you to keep the five files yourself and paste them back.
+**Already run a context system?** Copy `claude-code/` into your project and run `/audit`. It reads what you have and adds the one file that is missing.
 
-**Claude Code, operator layer only** (you already run a context system): copy the `claude-code/` folder's contents into your project:
+## First run: on me
 
-```
-cp -r claude-code/skills/* .claude/skills/
-cat claude-code/CLAUDE.md >> CLAUDE.md
-cp ledgers/*.md .
-```
+I ran the audit on myself before publishing. Three of the rows, with the evidence the machine quoted back at me:
 
-Optionally merge `claude-code/settings.hooks.json` into `.claude/settings.json` so the operator file prints at session start. Then run `/audit` once. It reads your project, your CLAUDE.md, your memory and your transcripts if it can reach them, and writes `OPERATOR.md`. Run `/whats-new <domain>` at the start of a working session.
+| Domain | Level | Rung | Evidence |
+|---|---|---|---|
+| Working with the assistant (context, sessions, delegation) | 78 | Specify | "the point of starting the other sessions and bringing them to compact is so that it focuses, almost like ctrl+f the info specific for that session now" |
+| Writing for a reader | 60 | Explain | "once you started saying 'I will be straight with you' that's AI brother, heck no" |
+| Design (sites, notes, creative) | 44 | Explain, low | "the hero is three things, not one, and stops short of the fold" |
+
+The first number is the one most people are highest in and least aware of, and it is the one that moves the others fastest, because a better brief is a better teacher. The rest of my file is private. Yours will be too.
 
 ## The loop
 
@@ -82,32 +69,41 @@ flowchart LR
     O -.weekly re-audit.-> C
 ```
 
-Left side is what a good context system already does. Right side is the part that was missing. The reply sits between them because that is the only place the two meet.
+Left side is what a good context system already does. Right side is the part that was missing. The reply is the only place the two meet.
 
-## What is in the folder
+## Why I built it
+
+I spent a year building the left side. Every word I say is saved verbatim, every fact change gets a line, the machine writes down its own reasoning and the gap when I correct it, memory is one fact per file. It compounds; the assistant knows me better every week.
+
+Then I asked it to grade its own output. It gave itself a seven, named three things it could have done better, and all three were right. My first thought was, why did you not do that in the first place. The answer is that I never asked, and I did not know enough to ask, and nothing in a year of records had noticed that I did not know.
+
+Four ledgers of what was said and what was built. None of what I could do. That is the fifth ledger, and it is the only new thing here. A year of making the agent more efficient, and the whole time the point was to make it more efficient for me.
+
+## Does the assistant not already do this?
+
+Partly. Every assistant explains when asked. Claude Code has an Explanatory style and a Learning style; ChatGPT and Gemini have study modes. Those are modes: on for one session, nothing persists about where you are, and nothing grades the machine's own output against your level. The gap is a record and a default. [What exists, and the evidence that the gap is real](WHAT-PEOPLE-ARE-SAYING.md).
+
+## In the folder
 
 | File | What it is |
 |---|---|
-| [brain/](brain/) | Layer one: the context system, given away. Folder tree, starter CLAUDE.md, nine SOPs, hooks, MCP list. |
-| [PROMPT.md](PROMPT.md) | Layer two as one paste for any chat tool. |
-| [THE-LADDER.md](THE-LADDER.md) | The 0 to 100 anchors, and what counts as evidence for each rung. |
-| [EXAMPLE.md](EXAMPLE.md) | One task, start to finish, showing all six behaviors. Read this second. |
+| [PROMPT.md](PROMPT.md) | The operator layer as one paste for any chat tool. |
+| [THE-LADDER.md](THE-LADDER.md) | The 0 to 100 anchors, the evidence per rung, how it knows without being told. |
+| [EXAMPLE.md](EXAMPLE.md) | One build, all six behaviors. |
 | [DOMAINS.md](DOMAINS.md) | What each rung looks like in six everyday domains. |
-| [WHAT-PEOPLE-ARE-SAYING.md](WHAT-PEOPLE-ARE-SAYING.md) | The evidence on skill loss, the conversation in finance, and what already exists. |
-| [FAQ.md](FAQ.md) | Is this a tutor, will it nag, how does it know, can it be gamed. |
-| `claude-code/CLAUDE.md` | The standing rules, to append to a project's CLAUDE.md. |
-| `claude-code/settings.hooks.json` | Optional: print the top of `OPERATOR.md` at every session start. |
-| `claude-code/skills/audit/` | `/audit`: read everything, score the operator, write the file. |
-| `claude-code/skills/whats-new/` | `/whats-new`: the research pass before work. |
+| [WHAT-PEOPLE-ARE-SAYING.md](WHAT-PEOPLE-ARE-SAYING.md) | The studies, the conversation in finance, what already exists. |
+| [FAQ.md](FAQ.md) | Is this a tutor, will it slow the agent, how does it know, can it be gamed. |
+| [brain/](brain/) | The context system: vault builder, starter CLAUDE.md, nine SOPs, hooks, MCP list. |
+| `claude-code/` | The rules block, `/setup`, `/audit`, `/whats-new`, an optional session-start hook. |
 | `ledgers/` | Templates for the five files. |
 
 ## Limits, stated
 
 - The assistant only sees what you type. A score is a floor on what it can observe, never a measure of you.
-- A score is an estimate. The evidence line is the real output. If the quote does not support the number, the number is wrong.
-- Models change under you. That is why every ledger is plain text and none of this depends on a vendor feature. The record is yours and it moves with you.
-- The agent does not slow down. Every rule here is about the reply and the record. The work is built at full productivity, every time; a rule that made the machine do less would get switched off in a week, and should.
-- It can be gamed. Using the field's words to look higher on the ladder is a known failure. The weekly re-audit reads what you did, not what you said about yourself.
+- A score is an estimate. The quote is the real output. If the quote does not support the number, the number is wrong.
+- The agent does not slow down. Every rule here is about the reply and the record. A rule that made the machine do less would get switched off in a week, and should.
+- Models change under you. That is why everything is plain text and nothing depends on a vendor feature. The record is yours and it moves with you.
+- It can be gamed. Using the field's words to look higher is the known failure; the weekly re-audit reads what you did, not what you said about yourself.
 
 ## License
 
