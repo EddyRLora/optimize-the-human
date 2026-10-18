@@ -14,7 +14,7 @@ A reading list, kept short and dated, for the claim this repo rests on: AI assis
 ## The conversation in finance
 
 - **Wall Street Prep and Financial Edge (March 2026)** added AI coaching to summer new-hire programs with the sequence: build the skill by hand first, then apply AI to the same problem, then compare the outputs. That is the hand-back, run by a training vendor at firm scale. [Announcement](https://www.bolsamania.com/nota-de-prensa/mercados/wall-street-prep-and-financial-edge-bring-ai-first-training-to-summer-2026-new-hire-programs--22102482.html)
-- **A large-cap equity research analyst, LinkedIn, 17 October 2026**, wrote that a friend in tax accounting told him "we are headed towards a world full of dummies" because AI "just provides the answer and doesn't teach," and that his own shop had deployed "teaching tokens" so the AI trains new analysts rather than streaming the answer. A public post, not a study. It is the sentence that made this repo public.
+- **A large-cap equity research analyst, LinkedIn, 17 October 2026**, wrote that a friend in tax accounting told him "we are headed towards a world full of dummies" because AI "just provides the answer and doesn't teach," and that his own shop now spends tokens on the AI training its new analysts rather than only answering them. A public post, not a study. It is the sentence that made this repo public.
 - **TechTarget, Donald Farmer (2026):** the senior analysts every firm wants to hire in 2026 are the juniors someone trained in 2020, so firms that stop training juniors are eating their own seed corn. [Link](https://www.techtarget.com/searchbusinessanalytics/opinion/Will-AI-replace-data-analysts-A-year-and-a-half-later)
 
 ## What already exists, and what it does not do
