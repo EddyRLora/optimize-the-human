@@ -9,7 +9,7 @@ How the assistant works in this brain. Each one was written after a specific fai
 4. [[04 - Workspace Conventions]]: archive never delete, index discipline, naming, boot-path safety.
 5. [[05 - Task Capture]]: one home per task, one line format, four tags, what is never a task.
 6. [[06 - Corpus and Taste]]: the human's words verbatim, and every design correction as a rule.
-7. [[07 - The Observer]]: the machine's own reasoning, and the gap entry when corrected.
+7. [[07 - The Observer]]: the machine's own decisions, and the gap entry when corrected.
 8. [[08 - Parallel Sessions and the Heartbeat]]: how several sessions stay honest with each other.
 9. [[09 - Research Import]]: how any third-party content enters the brain.
 10. [[Session Prompt Template]]: how a session is opened cold.

@@ -19,8 +19,8 @@ def head(p, n):
         return ""
 out = []
 out.append("=== BOOT === Read in order before acting: CLAUDE.md, OS/Manual/Start Here.md, this heartbeat tail, "
-           "the last 2 Conversation Log entries, OPERATOR.md. The reply rule: do the work whole, then the reasoning in prose. "
-           "Log choices to this session's DECISIONS.md as you make them; a correction gets a gap entry with MY REASONING. ===")
+           "the last 2 Conversation Log entries, OPERATOR.md. The reply rule: do the work whole, then the explanation in prose. "
+           "Log choices to this session's DECISIONS.md as you make them (what, over what, why); a correction gets a gap entry naming MY ASSUMPTION. ===")
 hb = tail(V / "OS/Manual/HEARTBEAT.md", 15)
 if hb:
     out.append("=== HEARTBEAT (what other sessions changed, newest last) ===\n" + hb)

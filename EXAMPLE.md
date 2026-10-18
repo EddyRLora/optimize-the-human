@@ -26,7 +26,7 @@ The operator file has this row:
 | Web design | 31 | Judge | "the carbon fiber is too much and the colors are kind of weird" (2026-10-11) | 45 | Explain: name what you are reacting to in the page's own terms |
 ```
 
-The page gets built, whole, at full speed. Then the reply carries the reasoning, in prose, and it opens on the concept the person was missing:
+The page gets built, whole, at full speed. Then the reply carries the explanation, in prose, and it opens on the concept the person was missing:
 
 > The thing you were reacting to last time is texture density and accent count: Stripe uses one textured surface per screen and one accent color, and everything else is flat and grey.
 
@@ -68,7 +68,7 @@ That is the same correction twice, which means the first capture failed. The ass
 ## 2026-10-18 14:12 | CORRECTED: the palette
 THEY SAID:    "the colors are kind of weird again"
 I HAD:        a blue accent on buttons and a violet accent on the pricing cards
-MY REASONING: I read "like Stripe" as the gradient and copied two accents from it
+MY ASSUMPTION: I read "like Stripe" as the gradient and copied two accents from it
 THE GAP:      Stripe's gradient has many colors; its UI has one accent. I treated the
               gradient as the palette. They are reacting to the second accent, which
               they cannot name yet, which is why it came back as "weird" both times.

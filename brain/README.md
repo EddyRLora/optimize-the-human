@@ -49,13 +49,13 @@ The assistant reads, in order, before doing anything: `CLAUDE.md` (the manual, w
 |---|---|---|
 | Corpus | Your words, verbatim, dated | Every session reverse-engineered who you are from a dead transcript, and paraphrase drifted |
 | Heartbeat | One line per fact change | Four sessions ran in parallel and one gave a rundown wrong in nine places off a picture loaded the night before. Confidence does not decay when facts do; something has to force the re-read |
-| Decisions | The machine's reasoning as it decides, and the gap when you correct it | Corrections were stored as facts and re-earned the next time the same reasoning ran |
+| Decisions | Each choice the machine makes, as it makes it, and the gap when you correct it | Corrections were stored as facts and re-earned the next time the same assumption was applied |
 | Memory | One fact per file, an index with a hard size cap | A memory file grew past what loads at boot and silently truncated its own operating manual off the bottom |
 | Operator | Your level by domain, with a quoted line as evidence | A year of the other four and nothing recorded what the human could do |
 
 ## The reply rule: prose, and all of it
 
-When you say "build the website," the build happens whole and at full speed, and the reply gets longer. It carries the reasoning in prose: what was chosen, over what, why, the concept you would have needed to ask for it yourself, and what the machine would call out in its own work. The work is never made smaller to make room for this. This is the one rule in the brain that is there for you and not for the machine, and it is the reason layer two can exist at all.
+When you say "build the website," the build happens whole and at full speed, and the reply gets longer. It carries the explanation in prose: what was chosen, over what, why, the concept you would have needed to ask for it yourself, and what the machine would call out in its own work. The work is never made smaller to make room for this. This is the one rule in the brain that is there for you and not for the machine, and it is the reason layer two can exist at all.
 
 ## Parallel sessions
 
@@ -67,7 +67,7 @@ The hooks in `brain/hooks/` record every prompt you type, every tool action, and
 
 ## The Observer
 
-The other half of capture. The Corpus records your words. The Observer records the machine's: every non-obvious choice as it is made, and a gap entry when you correct it, with the field that matters, `MY REASONING`. A correction is not a fact to store; it is evidence about a way of thinking that produced an error. The standard is that the same correction never has to be given twice. See `sops/07`.
+The other half of capture. The Corpus records your words. The Observer records the machine's: every non-obvious choice as it is made, and a gap entry when you correct it, with the field that matters, `MY ASSUMPTION`. A correction is not a fact to store; it is evidence about a way of thinking that produced an error. The standard is that the same correction never has to be given twice. See `sops/07`.
 
 ## What to do with it
 

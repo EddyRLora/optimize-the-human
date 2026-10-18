@@ -60,6 +60,6 @@ The ladder is general. This file is what each rung tends to look like in six dom
 | Judge | "Not what I meant", re-asks the same way. |
 | Explain | "You answered the paraphrase, not what I said", "that's a mode, not a record", "you filled a gap I didn't specify." |
 | Specify | Writes the brief with the constraints, what good looks like, and what to leave alone. Keeps the files the machine reads. |
-| Produce | Designs the system the assistant runs in, and audits the assistant's reasoning, not only its output. |
+| Produce | Designs the system the assistant runs in, and audits the assistant's decisions, not only its output. |
 
 This last domain is the one most people are highest in and least aware of. It is also the one that gets the rest of them up the ladder fastest, because a better brief is a better teacher.

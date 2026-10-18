@@ -4,7 +4,7 @@
 No. A tutor is a mode you open when you want to learn. This is a default that runs while you work and keeps a record. The teaching is one sentence. The record is the product.
 
 **Will it slow the agent down?**
-No. Every rule is about the reply and the record. The work is built at full productivity. What changes is that the reply carries the reasoning in prose, a grade you did not ask for when the output is under its own bar, and a piece of work handed back when the task has a repeatable piece. The chat gets longer. The build does not get smaller. The skip count is never mentioned in a reply.
+No. Every rule is about the reply and the record. The work is built at full productivity. What changes is that the reply carries the explanation in prose, a grade you did not ask for when the output is under its own bar, and a piece of work handed back when the task has a repeatable piece. The chat gets longer. The build does not get smaller. The skip count is never mentioned in a reply.
 
 **How does it know what I don't know if I never say?**
 From what you do with the output. What you never edit against what you always rewrite, what you ask why about, what you re-ask a week later in the same words, the same mistake it corrected three times. See the ladder. You will not tell it. The record will.

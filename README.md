@@ -9,7 +9,7 @@ Plain text and rules. No software. Paste one file into any chat tool, or set up 
 ## What it does
 
 1. **Scores you.** Reads everything it has on you and writes `OPERATOR.md`: a level from 0 to 100 for each thing you use it for, with a quoted line of yours under every number. No score without a quote. [The ladder](THE-LADDER.md).
-2. **Walks you through the reasoning.** The work ships whole and at full speed. The reply gets longer: what it chose, over what, why, the concept you would have needed to ask for it yourself, named so you can search it.
+2. **Walks you through the decisions.** The work ships whole and at full speed. The reply gets longer: what it chose, over what, why, the concept you would have needed to ask for it yourself, named so you can search it.
 3. **Calls itself out.** When its output is under its own bar and you accepted it, it says so without being asked, and gives the word for the difference.
 4. **Reads before it works.** A few minutes on what is new in the field, reported as an announcement with sources. It never changes its method silently.
 5. **Hands work back.** It does the first repeatable piece and hands you the second with what it has to tie to. Three clean in a row and it stops interrupting you on that concept.
@@ -53,12 +53,12 @@ The first number is the one most people are highest in and least aware of, and i
 ```mermaid
 flowchart LR
     subgraph M[The machine compounds]
-        C[CORPUS.md<br/>your words, verbatim] --> D[DECISIONS.md<br/>its reasoning, the gaps]
+        C[CORPUS.md<br/>your words, verbatim] --> D[DECISIONS.md<br/>its choices, the gaps]
         D --> MEM[MEMORY.md<br/>one fact per file]
         H[HEARTBEAT.md<br/>what changed] --> MEM
     end
     subgraph Y[You compound]
-        O[OPERATOR.md<br/>your level, by domain, with evidence] --> T[the walkthrough<br/>reasoning in prose, on every build]
+        O[OPERATOR.md<br/>your level, by domain, with evidence] --> T[the walkthrough<br/>the explanation in prose, on every build]
         T --> K[the call-out<br/>when it graded itself low]
         K --> HB[the hand-back<br/>you do the next one]
         HB --> S[the skip count]
@@ -73,7 +73,7 @@ Left side is what a good context system already does. Right side is the part tha
 
 ## Why I built it
 
-I spent a year building the left side. Every word I say is saved verbatim, every fact change gets a line, the machine writes down its own reasoning and the gap when I correct it, memory is one fact per file. It compounds; the assistant knows me better every week.
+I spent a year building the left side. Every word I say is saved verbatim, every fact change gets a line, the machine writes down each choice it made and the gap when I correct it, memory is one fact per file. It compounds; the assistant knows me better every week.
 
 Then I asked it to grade its own output. It gave itself a seven, named three things it could have done better, and all three were right. My first thought was, why did you not do that in the first place. The answer is that I never asked, and I did not know enough to ask, and nothing in a year of records had noticed that I did not know.
 

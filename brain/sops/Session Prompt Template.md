@@ -20,7 +20,7 @@ DELIVERABLES, one row per output, full paths:
 |---|---|
 | [name] | [path] |
 
-RULES: the writing rules in CLAUDE.md; SOPs 01 to 09 in force; the reply rule (work whole, then the reasoning in prose); log as you go; heartbeat line before replying on any fact change.
+RULES: the writing rules in CLAUDE.md; SOPs 01 to 09 in force; the reply rule (work whole, then the explanation in prose); log as you go; heartbeat line before replying on any fact change.
 
 DONE WHEN: [the condition, stated so a stranger could check it].
 ```
