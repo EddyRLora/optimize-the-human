@@ -18,7 +18,7 @@ METHOD: no change.
 
 One announcement. If nothing is new, it is one line and the work starts.
 
-### The teaching line, then the work
+### The work, then the walkthrough
 
 The operator file has this row:
 
@@ -26,11 +26,11 @@ The operator file has this row:
 | Web design | 31 | Judge | "the carbon fiber is too much and the colors are kind of weird" (2026-10-11) | 45 | Explain: name what you are reacting to in the page's own terms |
 ```
 
-So the reply opens with one sentence:
+The page gets built, whole, at full speed. Then the reply carries the reasoning, in prose, and it opens on the concept the person was missing:
 
 > The thing you were reacting to last time is texture density and accent count: Stripe uses one textured surface per screen and one accent color, and everything else is flat and grey.
 
-Then the page gets built. The teaching line is not a lecture, it is the name of the concept, said once, so that next time the person can ask for "one textured surface, one accent" instead of "less carbon fiber."
+Then the rest of the walkthrough: the type scale it chose and why, the grid, the one place it departed from the reference and the reason, the two things it is not sure about. A page of prose under a finished page. The person can read it or not; the concept is named once, so that next time they can ask for "one textured surface, one accent" instead of "less carbon fiber."
 
 ### The call-out
 

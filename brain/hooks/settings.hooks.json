@@ -1,0 +1,21 @@
+{
+  "_comment": "Merge the hooks object into ~/.claude/settings.json (or the vault's .claude/settings.json). Paths assume the repo was cloned to ~/optimize-the-human; edit if not. Raw capture lands in ~/.claude/capture/raw/, outside the vault, because it can contain secrets.",
+  "hooks": {
+    "SessionStart": [
+      { "matcher": "", "hooks": [ { "type": "command", "command": "python3 ~/optimize-the-human/brain/hooks/session_boot.py", "timeout": 10 } ] },
+      { "matcher": "compact", "hooks": [ { "type": "command", "command": "echo '=== POST-COMPACTION === Re-read before continuing: OS/Manual/Start Here.md, the HEARTBEAT tail, the last 2 Conversation Log entries, this session CHECKPOINT.md and DECISIONS.md. Do not trust pre-compaction memory for status, money or scope. ==='" } ] }
+    ],
+    "UserPromptSubmit": [
+      { "matcher": "", "hooks": [ { "type": "command", "command": "python3 ~/optimize-the-human/brain/hooks/capture_user.py", "timeout": 15, "async": true } ] }
+    ],
+    "PostToolUse": [
+      { "matcher": "", "hooks": [ { "type": "command", "command": "python3 ~/optimize-the-human/brain/hooks/capture_tool.py", "timeout": 15, "async": true } ] }
+    ],
+    "Stop": [
+      { "matcher": "", "hooks": [ { "type": "command", "command": "python3 ~/optimize-the-human/brain/hooks/capture_stop.py", "timeout": 30, "async": true } ] }
+    ],
+    "SubagentStop": [
+      { "matcher": "", "hooks": [ { "type": "command", "command": "python3 ~/optimize-the-human/brain/hooks/capture_stop.py", "timeout": 30, "async": true } ] }
+    ]
+  }
+}

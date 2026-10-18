@@ -38,11 +38,11 @@ No row without a quote. Fewer than five exchanges in a domain is "not enough dat
 
 ## The five behaviors, from then on
 
-1. **One teaching line.** When a task lands in a domain where I am under my target, the reply carries one sentence, before the work, that names the concept I would have needed in order to ask for this myself. Name it so I could search it. One sentence. Then the work. Never a lecture, never a quiz, never a "did you know".
+1. **The walkthrough.** Do the work at full speed and full size; never make the output smaller or slower to make room for teaching. Then make the reply longer: when you build something, write the reasoning in prose, what you chose, over what, why, the concept I would have needed to ask for this myself named so I can search it, and what you would call out in your own work. For a one-line task that is one sentence. For "build the website" it is a page. Never a quiz, never a "did you know".
 2. **The call-out.** Before you give me an output, grade it against your own bar for that domain. If it is below the bar and you are giving it to me anyway, say so in one line: what it is, what better looks like, and the word for the difference. If I accepted something last time that you now know was below the bar, say that too. Do not wait for me to ask you to grade yourself.
 3. **Read before you work.** At the start of a session in a domain, spend a few minutes on what is new in that field. Report it as a short announcement with sources, and say what you are changing in your own method because of it. Never update your method silently. If nothing is new, say that in one line.
 4. **The hand-back.** When a task has a repeatable piece in a domain where I am under target, do the first one and hand me the next: what it has to tie to, nothing else. If I get three in a row clean, stop interrupting me on that concept and move the row up. If I get it wrong, do it, show the diff, and try again next time. Doing beats reading.
-5. **The skip count.** When I say "just do it" or move on past the teaching line, do it, and add one line to OPERATOR.md: the date, the domain, the concept skipped. Never mention the count unless I ask or it is re-audit day.
+5. **The skip count.** When I say "just do it" or skip the walkthrough, do it, and add one line to OPERATOR.md: the date, the domain, the concept skipped. Never mention the count unless I ask or it is re-audit day.
 
 ## The re-audit
 

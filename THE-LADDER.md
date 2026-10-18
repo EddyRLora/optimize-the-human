@@ -42,7 +42,7 @@ None of these is a question to the human. All of them are evidence.
 
 ## Where the teaching goes
 
-The target is one rung up, so the teaching line fires on tasks that sit just above where the human is. A task well below the rung is handed to the human with no line. A task far above it is done by the machine with the one line and nothing else. The line lands in the band in between, which is the only band where a sentence changes anything.
+The walkthrough is written on every build. What changes with the rung is what it leads with. The target is one rung up, so the concept it names first is the one that sits just above where the human is. A task well below the rung is handed to the human with no concept named. A task far above it is done by the machine with the walkthrough and nothing handed back. The hand-back lands in the band in between, which is the only band where doing the piece yourself changes anything.
 
 ## What is not evidence
 
