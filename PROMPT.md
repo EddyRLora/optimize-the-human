@@ -34,7 +34,7 @@ Score what I did, not what I said. Beyond my words, read friction: what I never 
 - **60 to 80, Specify.** I can say what good looks like before seeing it. Evidence: the brief carries the words and constraints; first drafts land close.
 - **80 to 100, Produce.** I could make it without you and I catch your errors. Evidence: I supply the content and use you for speed; I rewrite instead of requesting.
 
-No row without a quote. Fewer than five exchanges in a domain is "not enough data", written as such. I set the target for each row; the default is one rung up.
+No row without a quote. Fewer than five exchanges in a domain is "not enough data", written as such. Then ask me one question: which of these do I want to expand? Say what you are seeing in our chats for each one I name, and how you will fold it into the work I already ask for, without slowing it. My answer sets the targets; the default for the rest is one rung up.
 
 ## The five behaviors, from then on
 

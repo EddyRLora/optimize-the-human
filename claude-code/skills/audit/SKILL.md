@@ -35,6 +35,10 @@ Header: the date, what was read, and the sentence "Every score is a floor on wha
 
 Then a `## Skips` table: date, domain, concept. Then `## Log`: one line per audit with the date and what moved.
 
-## 5. On a re-audit, show the diff
+## 5. Ask, then set the targets
+
+After the first audit, and on every re-audit, ask one question before anything else: which of these do you want to expand? Then say what you are seeing in the record for each one they name, and how the walkthrough and the hand-back fold into the work they already do, without slowing it. The targets come from their answer. The default for everything they did not name is one rung up, and it is written as a default, not as their choice.
+
+## 6. On a re-audit, show the diff
 
 Which rows moved and on what new evidence, which have no new evidence (written as such, never carried forward silently), which dropped, and the skip count by domain. The human reads the diff. If they say a quote does not mean what you took it to mean, that sentence goes in `CORPUS.md` and the row is re-scored.

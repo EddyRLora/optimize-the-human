@@ -8,7 +8,7 @@ Plain text and rules. No software. Paste one file into any chat tool, or set up 
 
 ## What it does
 
-1. **Scores you.** Reads everything it has on you and writes `OPERATOR.md`: a level from 0 to 100 for each thing you use it for, with a quoted line of yours under every number. No score without a quote. [The ladder](THE-LADDER.md).
+1. **Scores you, then asks.** Reads everything it has on you and writes `OPERATOR.md`: a level from 0 to 100 for each thing you use it for, with a quoted line of yours under every number. No score without a quote. Then one question: which of these do you want to expand? Your answer sets the targets. [The ladder](THE-LADDER.md).
 2. **Walks you through the decisions.** The work ships whole and at full speed. The reply gets longer: what it chose, over what, why, the concept you would have needed to ask for it yourself, named so you can search it.
 3. **Calls itself out.** When its output is under its own bar and you accepted it, it says so without being asked, and gives the word for the difference.
 4. **Reads before it works.** A few minutes on what is new in the field, reported as an announcement with sources. It never changes its method silently.
