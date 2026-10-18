@@ -12,7 +12,7 @@ If you use an assistant every day, it gets better at your work and you get worse
 
 I run a large context system for my own work: every word I say is saved verbatim, every fact change is logged, the machine writes down its own reasoning and the gap when I correct it, and memory is one fact per file. It compounds. The assistant knows me better every week. Then I asked it to grade its own output and it gave itself a seven, named three things it could have done better, and I thought, why did you not do that in the first place. The answer is that I never asked, and I did not know enough to ask, and nothing in the system recorded that I did not know.
 
-Four ledgers recorded what was said and what was built. None recorded what I could do. That is the fifth ledger, and it is the only new thing in this repo.
+Four ledgers recorded what was said and what was built. None recorded what I could do. That is the fifth ledger, and it is the only new thing in this repo. A year of making the agent more efficient, and the whole time the point was to make it more efficient for me.
 
 ## What it does
 
@@ -41,7 +41,7 @@ cat claude-code/CLAUDE.md >> CLAUDE.md
 cp ledgers/*.md .
 ```
 
-Then run `/audit` once. It reads your project, your CLAUDE.md, your memory and your transcripts if it can reach them, and writes `OPERATOR.md`. Run `/whats-new <domain>` at the start of a working session.
+Optionally merge `claude-code/settings.hooks.json` into `.claude/settings.json` so the operator file prints at session start. Then run `/audit` once. It reads your project, your CLAUDE.md, your memory and your transcripts if it can reach them, and writes `OPERATOR.md`. Run `/whats-new <domain>` at the start of a working session.
 
 ## The loop
 
@@ -72,7 +72,12 @@ Left side is what a good context system already does. Right side is the part tha
 |---|---|
 | [PROMPT.md](PROMPT.md) | The whole thing as one paste for any chat tool. |
 | [THE-LADDER.md](THE-LADDER.md) | The 0 to 100 anchors, and what counts as evidence for each rung. |
+| [EXAMPLE.md](EXAMPLE.md) | One task, start to finish, showing all six behaviors. Read this second. |
+| [DOMAINS.md](DOMAINS.md) | What each rung looks like in six everyday domains. |
+| [WHAT-PEOPLE-ARE-SAYING.md](WHAT-PEOPLE-ARE-SAYING.md) | The evidence on skill loss, the conversation in finance, and what already exists. |
+| [FAQ.md](FAQ.md) | Is this a tutor, will it nag, how does it know, can it be gamed. |
 | `claude-code/CLAUDE.md` | The standing rules, to append to a project's CLAUDE.md. |
+| `claude-code/settings.hooks.json` | Optional: print the top of `OPERATOR.md` at every session start. |
 | `claude-code/skills/audit/` | `/audit`: read everything, score the operator, write the file. |
 | `claude-code/skills/whats-new/` | `/whats-new`: the research pass before work. |
 | `ledgers/` | Templates for the five files. |

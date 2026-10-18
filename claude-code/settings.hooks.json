@@ -1,0 +1,17 @@
+{
+  "_comment": "Optional. Merge into .claude/settings.json so the top of OPERATOR.md prints at the start of every session, the way a boot sequence should. Remove the _comment key when you merge.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "test -f OPERATOR.md && echo '=== OPERATOR (the human, not the machine) ===' && head -30 OPERATOR.md || echo '=== OPERATOR.md missing: run /audit ==='",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+# What people are saying, and what exists
+
+A reading list, kept short and dated, for the claim this repo rests on: AI assistance speeds the work and erodes the skill, and nothing on the market records the human's side of that trade. Every entry says what it is, so a reader can weigh it. Last updated 2026-10-18.
+
+## The evidence on skill
+
+- **Anthropic, "How AI assistance impacts the formation of coding skills" (29 January 2026).** A randomized trial with 52 mostly junior engineers. On a quiz covering concepts used minutes earlier, the AI-assisted group scored 17 percent lower than the group that coded by hand, and the speed gain was not statistically significant. Participants who asked follow-up questions and for explanations kept more; those who delegated kept less. That second finding is the whole argument for a teaching line. [anthropic.com/research/AI-assistance-coding-skills](https://www.anthropic.com/research/AI-assistance-coding-skills)
+- **MIT Media Lab, Kosmyna et al., "Your Brain on ChatGPT" (2025).** The paper that named "cognitive debt." 54 participants, EEG, essay writing with an LLM, a search engine, or nothing, then the task repeated without tools. The LLM group showed less brain activity and worse recall on the repeat. A preprint with a small sample; read it as a signal, not a verdict. [Coverage](https://www.holo.mg/stream/arxiv-mit-media-lab-nataliya-kosmyna-chatgpt-brain-rot)
+- **Gerlich (2025), 666 participants.** A strong negative correlation between cognitive offloading to AI and critical thinking scores, around r = 0.7 depending on the write-up. Survey design, so it cannot show cause. [PsyPost summary](https://www.psypost.org/is-ai-making-us-stupid-through-cognitive-offloading-new-review-explores-the-evidence/)
+- **Microsoft Research and Carnegie Mellon (2025), 319 knowledge workers.** Higher confidence in the AI's answer went with less critical-thinking effort; higher confidence in one's own ability went with more. Self-reported. [Coverage](https://tech.liga.net/en/technology/news/scientists-tell-how-chatgpt-influences-human-critical-thinking)
+- **Trends in Cognitive Sciences review (2026).** A theoretical review arguing that outsourcing mental tasks erodes specific learned skills while foundational abilities are more resilient. The most careful source on the list. [PsyPost, July 2026](https://www.psypost.org/is-ai-making-us-stupid-through-cognitive-offloading-new-review-explores-the-evidence/)
+- **"Brainrot: Deskilling and Addiction are Overlooked AI Risks" (arXiv 2605.03512, 2026).** Frames the deficit as skipping the "desirable difficulties" that learning needs. [arxiv.org/pdf/2605.03512](https://arxiv.org/pdf/2605.03512)
+
+## The conversation in finance
+
+- **Wall Street Prep and Financial Edge (March 2026)** added AI coaching to summer new-hire programs with the sequence: build the skill by hand first, then apply AI to the same problem, then compare the outputs. That is the hand-back, run by a training vendor at firm scale. [Announcement](https://www.bolsamania.com/nota-de-prensa/mercados/wall-street-prep-and-financial-edge-bring-ai-first-training-to-summer-2026-new-hire-programs--22102482.html)
+- **A large-cap equity research analyst, LinkedIn, 17 October 2026**, wrote that a friend in tax accounting told him "we are headed towards a world full of dummies" because AI "just provides the answer and doesn't teach," and that his own shop had deployed "teaching tokens" so the AI trains new analysts rather than streaming the answer. A public post, not a study. It is the sentence that made this repo public.
+- **TechTarget, Donald Farmer (2026):** the senior analysts every firm wants to hire in 2026 are the juniors someone trained in 2020, so firms that stop training juniors are eating their own seed corn. [Link](https://www.techtarget.com/searchbusinessanalytics/opinion/Will-AI-replace-data-analysts-A-year-and-a-half-later)
+
+## What already exists, and what it does not do
+
+- **Learning modes.** Claude Code ships an Explanatory output style (insights while it works) and a Learning style (it leaves `TODO(human)` markers for you to fill in). ChatGPT and Gemini have study modes. These are good and this repo borrows the hand-back from them. They are modes: switched on per session, nothing persists about where you are, and nothing grades the machine's own output against your level. [Claude Code output styles](https://code.claude.com/docs/en/output-styles)
+- **Memory layers for coding agents** (a crowded shelf on GitHub in 2026: shared memory hubs, git-versioned codebase maps, self-improving context engines, markdown memory per project). Every one of them makes the machine remember more. None keeps a file on the human.
+- **CLAUDE.md template collections and context-engineering kits.** Same direction: better instructions to the machine.
+- **Tutoring research.** Knowledge tracing (Bayesian and deep) is the academic version of the operator file, with decades of work behind it. A 2026 multi-agent tutor demo keeps a shared learner state with mastery estimates and misconceptions. That is where this goes if someone builds the real thing. [IntelliCode, EACL 2026](https://aclanthology.org/2026.eacl-demo.10)
+- **Tools that explain the code the AI just wrote.** Several were named to us by another assistant; we could not find them by search on the day this was written, so they are not listed. If you know one, open an issue.
+
+## What is not here
+
+A study that measured whether keeping a record of the human's level changes the outcome. That study does not exist. This repo is the cheapest way to start generating the data.
