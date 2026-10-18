@@ -1,6 +1,6 @@
 # singularity
 
-Make humans smart again. Optimize the human, not only the model.
+Optimize the human, not only the model.
 
 Your assistant keeps getting better at your work. This makes it keep a file on how good *you* are at it, with your own words as the evidence, and work to raise the number while it does the job at full speed.
 
