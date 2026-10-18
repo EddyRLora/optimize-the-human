@@ -38,7 +38,7 @@ idx "Products" "Products" "00 - Master Map"
 [ -f "$V/OS/Manual/HEARTBEAT.md" ] || cp "$HERE/../ledgers/HEARTBEAT.md" "$V/OS/Manual/HEARTBEAT.md"
 [ -f "$V/OS/Manual/Conversation Log.md" ] || printf '# Conversation Log\n> Up: [[OS/Manual/00 - Index|Manual]]\n\nOne entry per session, written as the session runs. Format in `OS/Agent SOPs/03`.\n' > "$V/OS/Manual/Conversation Log.md"
 [ -f "$V/OS/Manual/Dashboard.md" ] || printf '# Dashboard\n> Up: [[OS/Manual/00 - Index|Manual]]\n\nThe numbers that matter this week, dated.\n' > "$V/OS/Manual/Dashboard.md"
-[ -f "$V/OS/Manual/What I'"'"'ve Built.md" ] || printf '# What I'"'"'ve Built\n> Up: [[OS/Manual/00 - Index|Manual]]\n\nEvery system and tool, dated, one line each.\n' > "$V/OS/Manual/What I've Built.md"
+[ -f "$V/OS/Manual/What I have Built.md" ] || printf '# What I have Built\n> Up: [[OS/Manual/00 - Index|Manual]]\n\nEvery system and tool, dated, one line each.\n' > "$V/OS/Manual/What I have Built.md"
 # ledgers
 [ -f "$V/Personal/Corpus.md" ] || cp "$HERE/../ledgers/CORPUS.md" "$V/Personal/Corpus.md"
 [ -f "$V/Personal/Who I Am.md" ] || printf '# Who I Am\n> Up: [[Personal/00 - Index|Personal]]\n\nIdentity, how you work, what you want. Written by you, in your words.\n' > "$V/Personal/Who I Am.md"
