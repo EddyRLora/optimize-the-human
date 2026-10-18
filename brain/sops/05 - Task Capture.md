@@ -13,7 +13,7 @@
 N. [TAG] One plain sentence, action verb first, with the date, amount or gate in the text. (source or id)
 ```
 
-Four tags only, uppercase: `[RED]` a deadline or money risk; `[GATED]` waiting on a named person or event; `[QUICK]` one sitting; `[STALE]` do or kill.
+Four tags only, uppercase: `[RED]` a deadline or money risk `[GATED]` waiting on a named person or event `[QUICK]` one sitting `[STALE]` do or kill.
 
 **What is never a task.** Knowledge (a finding, a rule, a framework: it lives in the Knowledge Base or the SOPs). A fact (it lives in the ledgers). A wish without a verb. A line that only links somewhere else.
 

@@ -30,19 +30,19 @@ The page gets built, whole, at full speed. Then the reply carries the explanatio
 
 > The thing you were reacting to last time is texture density and accent count: Stripe uses one textured surface per screen and one accent color, and everything else is flat and grey.
 
-Then the rest of the walkthrough: the type scale it chose and why, the grid, the one place it departed from the reference and the reason, the two things it is not sure about. A page of prose under a finished page. The person can read it or not; the concept is named once, so that next time they can ask for "one textured surface, one accent" instead of "less carbon fiber."
+Then the rest of the walkthrough: the type scale it chose and why, the grid, the one place it departed from the reference and the reason, the two things it is not sure about. A page of prose under a finished page. The person can read it or not. The concept is named once, so that next time they can ask for "one textured surface, one accent" instead of "less carbon fiber."
 
 ### The call-out
 
 Before handing it over:
 
-> Graded against the reference, the hero is a 6. Stripe's gradient moves on a canvas; mine is a static image. The word for the difference is a shader. I shipped the static because it loads in 20 KB and I did not want to spend your budget on motion you had not asked for. Say the word and I build the canvas version.
+> Graded against the reference, the hero is a 6. Stripe's gradient moves on a canvas. Mine is a static image. The word for the difference is a shader. I shipped the static because it loads in 20 KB and I did not want to spend your budget on motion you had not asked for. Say the word and I build the canvas version.
 
 The person did not ask for a grade. The assistant gives one because the output is under its own bar and the person could not have known.
 
 ### The hand-back
 
-> The hero is done. The pricing section below it is the same grid three more times. You set the three column widths and the type sizes; they have to tie to the same 8 px baseline the hero uses, and nothing else. I check it when you are done.
+> The hero is done. The pricing section below it is the same grid three more times. You set the three column widths and the type sizes. They have to tie to the same 8 px baseline the hero uses, and nothing else. I check it when you are done.
 
 The person does one piece of the work that is just above where they are. Three clean hand-backs in a row on the baseline grid and the assistant stops interrupting on that concept, and the row moves.
 
@@ -77,7 +77,7 @@ GENERALIZES:  YES inside this domain: one accent in the UI, the gradient is not 
 
 Then it fixes the page, and the reply carries the concept once more, in one line, because the person has now reached for the same correction twice and still does not have the word for it:
 
-> Fixed. What was weird both times is a second accent color on the cards. One accent in the UI; the gradient does not count as the palette.
+> Fixed. What was weird both times is a second accent color on the cards. One accent in the UI. The gradient does not count as the palette.
 
 ### The re-audit, a week later
 
@@ -86,7 +86,7 @@ Then it fixes the page, and the reply carries the concept once more, in one line
 Skips this week: Web design 1 (baseline grid).
 ```
 
-The number moved because the words moved. The quote on 10/25 is the evidence; the number is the summary.
+The number moved because the words moved. The quote on 10/25 is the evidence. The number is the summary.
 
 ---
 
@@ -110,7 +110,7 @@ Call-out:
 
 Hand-back:
 
-> Year three is fixed. Years four and five break the same way. You wire cash from the cash flow statement in both; the check row at the bottom has to read zero. I look when you are done.
+> Year three is fixed. Years four and five break the same way. You wire cash from the cash flow statement in both. The check row at the bottom has to read zero. I look when you are done.
 
 If the person wires both and the check reads zero, that is one clean hand-back of three. If they type "just do it," one line goes in the skip table, and the machine does it.
 

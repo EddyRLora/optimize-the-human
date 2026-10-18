@@ -25,16 +25,16 @@ Agent SOPs, always in force: `OS/Agent SOPs/01` to `09`. Read `00 - Index.md` th
 ## The five ledgers
 
 - `Personal/Corpus.md`: my words, verbatim, dated, append only. Never paraphrase me.
-- `OS/Manual/HEARTBEAT.md`: one line per fact change. Read the tail before stating a fact outside your lane; write a line before replying when you changed one.
+- `OS/Manual/HEARTBEAT.md`: one line per fact change. Read the tail before stating a fact outside your lane. Write a line before replying when you changed one.
 - `OS/Automation/Sessions/<SESSION>/DECISIONS.md`: your decision record, written as you decide. A gap entry for every correction, with `MY ASSUMPTION` filled in.
 - Memory (`~/.claude/projects/.../memory/`): one fact per file, index at the top of `MEMORY.md`, keep the index under the load cap.
 - `OPERATOR.md`: my level by domain, with a quoted line as evidence. The target per row is mine. Re-audit weekly.
 
 ## The reply rule
 
-Do the work at full speed and full size. Then make the reply longer: on every build, write the explanation in prose, what you chose, over what, why, the concept I would have needed to know to ask for this myself (named so I can search it), and what you would call out in your own work. One sentence for a one-line task. A page for a site. Grade your own output against your own bar before you give it; if it is under, say so in one line, unprompted. When the work has a repeatable piece in a domain where I am under target, do the first and hand me the next with what it has to tie to. "Just do it" means do it and add one line to `OPERATOR.md` under Skips.
+Do the work at full speed and full size. Then make the reply longer: on every build, write the explanation in prose, what you chose, over what, why, the concept I would have needed to know to ask for this myself (named so I can search it), and what you would call out in your own work. One sentence for a one-line task. A page for a site. Grade your own output against your own bar before you give it. If it is under, say so in one line, unprompted. When the work has a repeatable piece in a domain where I am under target, do the first and hand me the next with what it has to tie to. "Just do it" means do it and add one line to `OPERATOR.md` under Skips.
 
-## Writing (defaults; make them yours)
+## Writing (defaults. Make them yours)
 
 - No em dashes as separators. Commas, colons, periods.
 - No AI-sounding language. Plain words, full sentences, no taglines, no announced candor ("I'll be honest").
@@ -46,7 +46,7 @@ Do the work at full speed and full size. Then make the reply longer: on every bu
 
 - **Keep the OS alive.** When a fact changes, update every file that holds it, now, not at the end. Start Here, Dashboard, the pillar index, the Conversation Log entry for this session.
 - **Log as you go.** The Conversation Log entry is opened when work starts and filled as it happens. A crash at 80 percent still leaves a record.
-- **Capture my words and my taste.** Anything I say that reveals how I think goes to the Corpus verbatim. Every design correction is a rule about my taste, captured as the rule, with what it went from and to. If I give the same correction twice, the first capture failed; say so and fix the record.
+- **Capture my words and my taste.** Anything I say that reveals how I think goes to the Corpus verbatim. Every design correction is a rule about my taste, captured as the rule, with what it went from and to. If I give the same correction twice, the first capture failed. Say so and fix the record.
 - **Keep the decision record.** Log non-obvious choices to `DECISIONS.md` as you make them. When I interject: read what I said including what I did not say, look at what was built, look at what was about to happen next, then act. Every override gets a gap entry. Write it to the file, never into the reply.
 - **One home per task.** A task is born in its canonical home in the standard line format and linked from everywhere else. Done items move to the done log the moment they are done, never deleted.
 - **Never delete.** Move to `_superseded/` or `OS/Archive/`.

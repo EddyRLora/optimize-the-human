@@ -5,23 +5,23 @@ description: Score the operator. Reads everything the project holds on the human
 
 # /audit
 
-The output is `OPERATOR.md`. The number is a summary; the quote is the evidence. No row without a quote.
+The output is `OPERATOR.md`. The number is a summary. The quote is the evidence. No row without a quote.
 
 ## 1. Inventory what you can see
 
-List it, in one line each: `CLAUDE.md`, `CORPUS.md`, `DECISIONS.md`, `HEARTBEAT.md`, `MEMORY.md`, any memory directory, and session transcripts (on a Mac, `~/.claude/projects/<project>/*.jsonl`; read the user turns, skip tool noise). Say what is missing. If a ledger is missing, create it from the template shape in this repo's `ledgers/` folder and say so.
+List it, in one line each: `CLAUDE.md`, `CORPUS.md`, `DECISIONS.md`, `HEARTBEAT.md`, `MEMORY.md`, any memory directory, and session transcripts (on a Mac, `~/.claude/projects/<project>/*.jsonl`. Read the user turns, skip tool noise). Say what is missing. If a ledger is missing, create it from the template shape in this repo's `ledgers/` folder and say so.
 
 If there is nothing at all, run the intake: ten questions, two per domain, about the last five things the human asked an assistant to do and what they did with the output. Write every row from intake as `intake only` until real evidence exists.
 
 ## 2. Find the domains
 
-Group the asks. A domain is anything asked for repeatedly. Fewer than five exchanges: write the row as `not enough data`. Do not invent a domain from a list; take them from the record.
+Group the asks. A domain is anything asked for repeatedly. Fewer than five exchanges: write the row as `not enough data`. Do not invent a domain from a list. Take them from the record.
 
 ## 3. Score each domain by evidence
 
 Read four things per domain: the vocabulary the human uses, the corrections they give, what they accept in silence, the questions they ask. Then read friction: what they never edit against what they always rewrite, what they ask why about, what they re-ask later in the same words, the same mistake corrected three times, what they copy out to another tool. Timestamps count where transcripts carry them.
 
-Rungs: 0 to 20 Accept (cannot tell good from bad), 20 to 40 Judge (can tell, cannot say why), 40 to 60 Explain (can say why in the field's words and correct it), 60 to 80 Specify (can say what good looks like before seeing it), 80 to 100 Produce (could do it without the machine and catches the machine's errors). Low in the rung if the evidence is thin or recent; high if consistent across months.
+Rungs: 0 to 20 Accept (cannot tell good from bad), 20 to 40 Judge (can tell, cannot say why), 40 to 60 Explain (can say why in the field's words and correct it), 60 to 80 Specify (can say what good looks like before seeing it), 80 to 100 Produce (could do it without the machine and catches the machine's errors). Low in the rung if the evidence is thin or recent. High if consistent across months.
 
 Score what they did, never what they said about themselves. Vocabulary used wrong is evidence for the rung below.
 

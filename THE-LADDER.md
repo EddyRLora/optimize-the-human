@@ -16,7 +16,7 @@ A domain is anything you use the assistant for repeatedly: reading financial sta
 
 ## How to score
 
-1. **Find the domains.** Read the whole record. Group the work the human asked for. A domain needs at least five exchanges to score; fewer is "not enough data", written as such.
+1. **Find the domains.** Read the whole record. Group the work the human asked for. A domain needs at least five exchanges to score. Fewer is "not enough data", written as such.
 2. **For each domain, find the rung by evidence, not by impression.** Look at four things: the vocabulary the human uses, the corrections the human gives, what the human accepts in silence, and the questions the human asks. Each rung above has what those look like.
 3. **Place within the rung.** Low in the rung if the evidence is thin or recent. High if it is consistent across months.
 4. **Write the line.** One row per domain: the domain, the number, the rung, the quoted evidence with its date, and the next rung's name. The quote must be the human's own words, verbatim, dated.
@@ -36,7 +36,7 @@ Nobody says "I don't understand lease accounting." The record says it for them. 
 - What they ask "why" about, and what they re-ask a week later in the same words.
 - The same mistake, corrected by the machine, three or four times.
 - What they copy out to another tool and what they leave in the chat.
-- Where the review is a glance and where it is a long stare. (Claude Code transcripts carry timestamps; most chat tools do not, so this one is often unavailable, and the audit says so.)
+- Where the review is a glance and where it is a long stare. (Claude Code transcripts carry timestamps. Most chat tools do not, so this one is often unavailable, and the audit says so.)
 
 None of these is a question to the human. All of them are evidence.
 

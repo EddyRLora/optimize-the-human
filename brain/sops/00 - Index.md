@@ -1,10 +1,10 @@
 # Agent SOPs
 > Up: [[OS/00 - Index|OS]]
 
-How the assistant works in this brain. Each one was written after a specific failure, named inside it. Read once; they are in force always.
+How the assistant works in this brain. Each one was written after a specific failure, named inside it. Read once. They are in force always.
 
 1. [[01 - Work Completion]]: execute, self-verify, then the human clears it. Nothing is done until cleared.
-2. [[02 - Workspace Sync]]: one fact lives in many files; when it changes, every copy changes, now.
+2. [[02 - Workspace Sync]]: one fact lives in many files. When it changes, every copy changes, now.
 3. [[03 - Session Logging]]: the Conversation Log is written as work happens, never from memory at the end.
 4. [[04 - Workspace Conventions]]: archive never delete, index discipline, naming, boot-path safety.
 5. [[05 - Task Capture]]: one home per task, one line format, four tags, what is never a task.

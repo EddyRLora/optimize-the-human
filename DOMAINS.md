@@ -1,6 +1,6 @@
 # Starter domains
 
-The ladder is general. This file is what each rung tends to look like in six domains people use an assistant for every day, so an audit has something to pattern-match against. These are starting points, not scoring keys; the audit takes its domains from the record, and the evidence is always the human's own words.
+The ladder is general. This file is what each rung tends to look like in six domains people use an assistant for every day, so an audit has something to pattern-match against. These are starting points, not scoring keys. The audit takes its domains from the record, and the evidence is always the human's own words.
 
 ## Reading financial statements and building models
 
@@ -20,7 +20,7 @@ The ladder is general. This file is what each rung tends to look like in six dom
 | Judge | "Sounds like AI", "too much", "not me", with no line named. |
 | Explain | "The second paragraph announces what it is about to do", "that sentence is a posture, cut it", "this closes on a tagline." |
 | Specify | The brief gives the register, the reader, the length, and the three things the piece must say, in that order. |
-| Produce | Writes it and uses the machine for a read; rewrites rather than requests. |
+| Produce | Writes it and uses the machine for a read. Rewrites rather than requests. |
 
 ## Code
 
@@ -40,7 +40,7 @@ The ladder is general. This file is what each rung tends to look like in six dom
 | Judge | "Weird", "too busy", "I like this one better" with no reason. |
 | Explain | "Two accents", "the type scale changes between sections", "this is a skin change, not a layout change." |
 | Specify | The brief names the reference, what to take from it and what not to, the grid and the one place texture is allowed. |
-| Produce | Lays it out and uses the machine to render; rejects on principle, not on feel. |
+| Produce | Lays it out and uses the machine to render. Rejects on principle, not on feel. |
 
 ## Data and SQL
 

@@ -14,6 +14,6 @@
 | A rule or preference learned | memory (one file) and the index line |
 | A fact proven false | every file that carried it, marked SUPERSEDED with the date, plus a `HEARTBEAT` line |
 
-**Superseding, not deleting.** When a number or a date stops being true, the old line is marked superseded with the date and the new one is written beside it. A find-and-replace on a number is dangerous when the number is coupled to arithmetic elsewhere; mark it instead and rebuild from the source.
+**Superseding, not deleting.** When a number or a date stops being true, the old line is marked superseded with the date and the new one is written beside it. A find-and-replace on a number is dangerous when the number is coupled to arithmetic elsewhere. Mark it instead and rebuild from the source.
 
 **When reading any file and spotting stale or conflicting information,** fix it or flag it now. Not later.

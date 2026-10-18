@@ -48,7 +48,7 @@ The assistant reads, in order, before doing anything: `CLAUDE.md` (the manual, w
 | Ledger | What it records | The failure it was built after |
 |---|---|---|
 | Corpus | Your words, verbatim, dated | Every session reverse-engineered who you are from a dead transcript, and paraphrase drifted |
-| Heartbeat | One line per fact change | Four sessions ran in parallel and one gave a rundown wrong in nine places off a picture loaded the night before. Confidence does not decay when facts do; something has to force the re-read |
+| Heartbeat | One line per fact change | Four sessions ran in parallel and one gave a rundown wrong in nine places off a picture loaded the night before. Confidence does not decay when facts do. Something has to force the re-read |
 | Decisions | Each choice the machine makes, as it makes it, and the gap when you correct it | Corrections were stored as facts and re-earned the next time the same assumption was applied |
 | Memory | One fact per file, an index with a hard size cap | A memory file grew past what loads at boot and silently truncated its own operating manual off the bottom |
 | Operator | Your level by domain, with a quoted line as evidence | A year of the other four and nothing recorded what the human could do |
@@ -63,11 +63,11 @@ You will end up running more than one. Each is a tab with a name and a session f
 
 ## Capture
 
-The hooks in `brain/hooks/` record every prompt you type, every tool action, and every final reply to a raw log outside the vault (it can contain secrets, so it never goes in git). The raw log is the floor. The Corpus and the Conversation Log are the curated layer on top; the assistant writes them as it works, and the raw log is there for the day it did not.
+The hooks in `brain/hooks/` record every prompt you type, every tool action, and every final reply to a raw log outside the vault (it can contain secrets, so it never goes in git). The raw log is the floor. The Corpus and the Conversation Log are the curated layer on top. The assistant writes them as it works, and the raw log is there for the day it did not.
 
 ## The Observer
 
-The other half of capture. The Corpus records your words. The Observer records the machine's: every non-obvious choice as it is made, and a gap entry when you correct it, with the field that matters, `MY ASSUMPTION`. A correction is not a fact to store; it is evidence about a way of thinking that produced an error. The standard is that the same correction never has to be given twice. See `sops/07`.
+The other half of capture. The Corpus records your words. The Observer records the machine's: every non-obvious choice as it is made, and a gap entry when you correct it, with the field that matters, `MY ASSUMPTION`. A correction is not a fact to store. It is evidence about a way of thinking that produced an error. The standard is that the same correction never has to be given twice. See `sops/07`.
 
 ## What to do with it
 

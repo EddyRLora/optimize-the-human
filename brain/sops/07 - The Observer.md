@@ -17,7 +17,7 @@ WOULD CHANGE:
 
 Earns an entry: a choice between real alternatives, a scope call, an assumption filling a gap, a rule that could have gone the other way. Does not: mechanical steps, obvious defaults.
 
-**Layer 2, the four steps.** When the human interjects, before any edit: read what they actually said, including what they did not say; look at what was built; look at what was about to happen next (half the value is in the plan they interrupted); then act. Jumping to the edit gives a correct artifact and zero learning.
+**Layer 2, the four steps.** When the human interjects, before any edit: read what they actually said, including what they did not say. Look at what was built. Look at what was about to happen next (half the value is in the plan they interrupted). Then act. Jumping to the edit gives a correct artifact and zero learning.
 
 **Layer 3, the gap entry.** Every override gets one:
 

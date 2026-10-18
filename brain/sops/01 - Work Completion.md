@@ -5,7 +5,7 @@ Three stages on every task. Nothing is "done" until the human clears it.
 
 **Execute.** Do the work, write outputs to the right paths, do not stop to ask unless genuinely blocked. Follow the writing rules while writing, not after: a violation caught at execute costs seconds, one caught after it shipped compounds.
 
-**Self-verify.** Read every output file back and check: it exists at the right path with real content; no writing-rule violations; no assumed numbers, prices or dates; no unfilled placeholders unless intentional; nothing that contradicts another file in the brain (grep for the fact before claiming it). Fix, then re-read.
+**Self-verify.** Read every output file back and check: it exists at the right path with real content. No writing-rule violations. No assumed numbers, prices or dates. No unfilled placeholders unless intentional. Nothing that contradicts another file in the brain (grep for the fact before claiming it). Fix, then re-read.
 
 **Review.** List what was built in `OS/Needs Review/` with one line per file and a one-line "what to look at". The human clears it or sends it back. Only a cleared item moves to done.
 

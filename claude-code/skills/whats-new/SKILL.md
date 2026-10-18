@@ -1,11 +1,11 @@
 ---
 name: whats-new
-description: The research pass before work. Spends a bounded few minutes on what is new in one domain (a field, a tool, a method), reports it as a short announcement with sources, and states what changes in the machine's own method because of it. Run at the start of a working session; "/whats-new <domain>".
+description: The research pass before work. Spends a bounded few minutes on what is new in one domain (a field, a tool, a method), reports it as a short announcement with sources, and states what changes in the machine's own method because of it. Run at the start of a working session "/whats-new <domain>".
 ---
 
 # /whats-new <domain>
 
-Bounded. Ten minutes of reading or five sources, whichever comes first. The point is not coverage; it is that the machine never changes how it works without saying so.
+Bounded. Ten minutes of reading or five sources, whichever comes first. The point is not coverage. It is that the machine never changes how it works without saying so.
 
 ## Do
 
